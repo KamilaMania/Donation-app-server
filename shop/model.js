@@ -11,7 +11,7 @@ const Item = sequelize.define("item", {
     allowNull: false
   }
   // Amount: {
-  //   type: Sequelize.DECIMAL,
+  //   type: Sequelize.INTEGER,
   //   allowNull: false
   // }
 });

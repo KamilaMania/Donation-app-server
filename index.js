@@ -7,11 +7,15 @@ const bodyParserMiddleware = bodyParser.json();
 const port = process.env.PORT || 4000;
 const campRouter = require("./camps/router");
 const itemRouter = require("./shop/router");
+const donationRouter = require("./donations/router");
+const dondationItemsRouter = require("./donationItems/reducer");
 
 app.use(corsMiddleware);
 app.use(bodyParserMiddleware);
 
 app.use(campRouter);
 app.use(itemRouter);
+app.use(donationRouter);
+app.use(dondationItemsRouter);
 
 app.listen(port, () => console.log(`Server listening on port ${port}`));
