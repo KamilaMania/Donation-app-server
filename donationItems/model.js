@@ -2,16 +2,16 @@ const Sequelize = require("sequelize");
 const sequelize = require("../db");
 
 const DonationItem = sequelize.define("donationItem", {
-  Amount: {
+  campId: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
+  itemName: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
+  amount: {
     type: Sequelize.DECIMAL,
-    allowNull: false
-  },
-  ItemId: {
-    type: Sequelize.INTEGER,
-    allowNull: false
-  },
-  CampId: {
-    type: Sequelize.INTEGER,
     allowNull: false
   }
 });

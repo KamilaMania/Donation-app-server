@@ -3,7 +3,7 @@ const DonationItem = require("./model");
 const router = new Router();
 
 router.get("/donationItems", (req, res, next) => {
-  const limit = req.query.limit || 25;
+  const limit = req.query.limit || 100;
   const offset = req.query.offset || 0;
   DonationItems.findAndCountAll({ limit, offset })
     .then(donationItems =>
