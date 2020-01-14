@@ -11,8 +11,9 @@ router.get("/donations", (req, res, next) => {
     )
     .catch(next);
 });
+
 router.post("/donation", (req, res, next) => {
-  Donation.create(req.body)
+  Donation.create(req.body) // { amount, campId}
     .then(donation => res.send(donation))
     .catch(next);
 });
