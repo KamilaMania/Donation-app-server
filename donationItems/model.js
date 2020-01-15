@@ -6,11 +6,11 @@ const DonationItem = sequelize.define("donationItem", {
     type: Sequelize.INTEGER,
     allowNull: false
   },
-  itemName: {
-    type: Sequelize.INTEGER,
+  package: {
+    type: Sequelize.STRING(1000),
     allowNull: false
   },
-  amount: {
+  totalPrice: {
     type: Sequelize.DECIMAL,
     allowNull: false
   }

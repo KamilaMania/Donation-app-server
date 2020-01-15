@@ -8,7 +8,7 @@ const port = process.env.PORT || 4000;
 const campRouter = require("./camps/router");
 const itemRouter = require("./shop/router");
 const donationRouter = require("./donations/router");
-const dondationItemsRouter = require("./donationItems/reducer");
+const dondationItemsRouter = require("./donationItems/router");
 
 app.use(corsMiddleware);
 app.use(bodyParserMiddleware);
