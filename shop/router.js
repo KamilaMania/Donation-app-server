@@ -9,15 +9,11 @@ router.get("/items", (req, res, next) => {
     .then(items => res.send({ data: items.rows, total: items.count }))
     .catch(next);
 });
-// router.post("/camp", (req, res, next) => {
-//   Event.create(req.body)
-//     .then(event => res.send(event))
-//     .catch(next);
-// });
 
 router.get("/item/", (req, res, next) => {
   Item.findByPk(req.params.id)
     .then(item => res.send(item))
     .catch(next);
 });
+
 module.exports = router;

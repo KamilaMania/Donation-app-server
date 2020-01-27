@@ -10,10 +10,6 @@ const Item = sequelize.define("item", {
     type: Sequelize.DECIMAL,
     allowNull: false
   }
-  // Amount: {
-  //   type: Sequelize.INTEGER,
-  //   allowNull: false
-  // }
 });
 
 sequelize
